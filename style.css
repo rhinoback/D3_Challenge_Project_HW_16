@@ -1,0 +1,63 @@
+#usdata {
+  border-radius: 8px;
+}
+
+.chart::before {
+  position: absolute;
+  top: 50px;
+  left: 300px;
+  z-index: -1;
+  display: block;
+  width: 400px;
+  height: 300px;
+  content: " ";
+  background-image: url("https://images.pexels.com/photos/4728850/pexels-photo-4728850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  opacity: 0.6;
+}
+
+.tooltip {
+  position: absolute;
+  width: 135px;
+  height: 60px;
+  padding: 2px;
+  padding-top: 8px;
+  font: 12px sans-serif;
+  color: white;
+  text-align: center;
+  background: #551aaf;
+  border: 0;
+  border-radius: 10px;
+}
+
+.axis-text {
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: bold;
+  fill: #ff006a;
+  text-anchor: middle;
+}
+
+.active {
+  font-weight: bold;
+  font-size: 30px;
+  fill: #000;
+  fill: #e72604;
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.inactive {
+  font-weight: lighter;
+  font-size: 20px;
+  fill: #f88204;
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.inactive:hover {
+  fill: #ff00b3;
+  cursor: pointer;
+}

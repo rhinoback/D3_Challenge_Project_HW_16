@@ -134,7 +134,7 @@ d3.csv("dataState.csv").then(function(dataState, err) {
     .attr("cx", d => xLinearScale(d[chosenXAxis]))
     .attr("cy", d => yLinearScale(d.obesity))
     .attr("r", 20)
-    .attr("fill", "pink")
+    .attr("fill", "purple")
     .attr("opacity", ".5");
 
   // Create group for two x-axis labels
@@ -162,7 +162,7 @@ d3.csv("dataState.csv").then(function(dataState, err) {
     .attr("x", 0 - (height / 2))
     .attr("dy", "1em")
     .classed("axis-text", true)
-    .text("Rate of Obesity");
+    .text("Rate of Obesity %");
 
   // updateToolTip function above csv import
   var circlesGroup = updateToolTip(chosenXAxis, circlesGroup);
